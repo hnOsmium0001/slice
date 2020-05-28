@@ -2,7 +2,7 @@ from conans import ConanFile
 
 class SliceConan(ConanFile):
     name = "slice"
-    version = "0.1.0"
+    version = "0.1.1"
     url = "https://github.com/hnOsmium0001/slice"
     description = "Container slice library for C++14 and above"
     license = "CC0-1.0"
@@ -10,7 +10,7 @@ class SliceConan(ConanFile):
     no_copy_source = True
 
     def package(self):
-        self.copy("*.h")
+        self.copy("*.hpp")
 
     def package_id(self):
         self.info.header_only()

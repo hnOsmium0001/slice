@@ -13,7 +13,7 @@ public:
 
 private:
 	Iterator beg_;
-	size_t size_;
+	Distance size_;
 
 public:
 	static auto None(Iterator end) -> Slice {
@@ -26,13 +26,13 @@ public:
 		return Slice{begin, size};
 	}
 
-	Slice(Iterator begin, size_t size) noexcept
+	Slice(Iterator begin, Distance size) noexcept
 		: beg_{ begin }
 		, size_{ size } {}
 	
 	auto begin() const -> Iterator { return beg_; }
 	auto end() const -> Iterator { return beg_ + size_; }
-	auto size() const -> size_t { return size_; }
+	auto size() const -> Distance { return size_; }
 };
 
 template <typename Container>
