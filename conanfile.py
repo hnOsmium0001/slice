@@ -2,7 +2,7 @@ from conans import ConanFile
 
 class SliceConan(ConanFile):
     name = "slice"
-    version = "0.1.1"
+    version = "0.2.0"
     url = "https://github.com/hnOsmium0001/slice"
     description = "Container slice library for C++14 and above"
     license = "CC0-1.0"
